@@ -1,0 +1,156 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="bg-[#efe8c1]">
+		<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center gap-8 py-8 px-8 text-center">
+
+			<div class="bg-white h-64 w-64 rounded-xl shadow-lg p-4 text-left hover:scale-105 hover:border-[#94C77E] border-4 transition-all duration-300">
+			  <div class="bg-[url('/img/materias/1.png')] bg-cover bg-top h-24 rounded-t-lg">
+                <p class="text-white text-4xl font-bold px-2">Español</p>
+                <p class="text-[#A16436] font-bold px-2">Luz Mery Perez</p>
+            </div> 
+			  <div class="flex justify-center -mt-6">
+				<div class="bg-white border-4 border-gray-300 rounded-full h-16 w-16">
+				  <img src="/img/avatar/1.png" class="rounded-full" alt="Avatar"> 
+				</div>
+			  </div>
+			  <p class="text-sm text-gray-500 mt-2">Próxima actividad: Ensayo literario</p>
+        <a href="/contenido">
+			  <button class="bg-[#94C77E] text-white py-1 px-4 rounded hover:bg-[#b2e59c] mt-4 text-sm">
+				Empezar
+			  </button>
+        </a>
+			</div>
+
+            <div class="bg-white h-64 w-64 rounded-xl shadow-lg p-4 text-left hover:scale-105 hover:border-[#94C77E] border-4 transition-all duration-300">
+                <div class="bg-[url('/img/materias/2.png')] bg-cover bg-top h-24 rounded-t-lg">
+                  <p class="text-white text-4xl font-bold px-2">Matemáticas</p>
+                  <p class="text-[#A16436] font-bold px-2">Luz Mery Perez</p>
+              </div> 
+                <div class="flex justify-center -mt-6">
+                  <div class="bg-white border-4 border-gray-300 rounded-full h-16 w-16">
+                    <img src="/img/avatar/2.png" class="rounded-full" alt="Avatar"> 
+                  </div>
+                </div>
+                <p class="text-sm text-gray-500 mt-2">Próxima actividad: Ensayo literario</p>
+                <button class="bg-[#94C77E] text-white py-1 px-4 rounded hover:bg-[#b2e59c] mt-4 text-sm">
+                  Empezar
+                </button>
+              </div>
+
+              <div class="bg-white h-64 w-64 rounded-xl shadow-lg p-4 text-left hover:scale-105 hover:border-[#94C77E] border-4 transition-all duration-300">
+                <div class="bg-[url('/img/materias/3.png')] bg-cover bg-top h-24 rounded-t-lg">
+                  <p class="text-white text-4xl font-bold px-2">Naturales</p>
+                  <p class="text-[#A16436] font-bold px-2">Luz Mery Perez</p>
+              </div> 
+                <div class="flex justify-center -mt-6">
+                  <div class="bg-white border-4 border-gray-300 rounded-full h-16 w-16">
+                    <img src="/img/avatar/3.png" class="rounded-full" alt="Avatar"> 
+                  </div>
+                </div>
+                <p class="text-sm text-gray-500 mt-2">Próxima actividad: Ensayo literario</p>
+                <button class="bg-[#94C77E] text-white py-1 px-4 rounded hover:bg-[#b2e59c] mt-4 text-sm">
+                  Empezar
+                </button>
+              </div>
+
+              <div class="bg-white h-64 w-64 rounded-xl shadow-lg p-4 text-left hover:scale-105 hover:border-[#94C77E] border-4 transition-all duration-300">
+                <div class="bg-[url('/img/materias/4.png')] bg-cover bg-top h-24 rounded-t-lg">
+                  <p class="text-white text-4xl font-bold px-2">Sociales</p>
+                  <p class="text-[#A16436] font-bold px-2">Luz Mery Perez</p>
+              </div> 
+                <div class="flex justify-center -mt-6">
+                  <div class="bg-white border-4 border-gray-300 rounded-full h-16 w-16">
+                    <img src="/img/avatar/4.png" class="rounded-full" alt="Avatar"> 
+                  </div>
+                </div>
+                <p class="text-sm text-gray-500 mt-2">Próxima actividad: Ensayo literario</p>
+                <button class="bg-[#94C77E] text-white py-1 px-4 rounded hover:bg-[#b2e59c] mt-4 text-sm">
+                  Empezar
+                </button>
+              </div>
+
+              <div class="bg-white h-64 w-64 rounded-xl shadow-lg p-4 text-left hover:scale-105 hover:border-[#94C77E] border-4 transition-all duration-300">
+                <div class="bg-[url('/img/materias/5.png')] bg-cover bg-top h-24 rounded-t-lg">
+                  <p class="text-white text-4xl font-bold px-2">Artística</p>
+                  <p class="text-[#A16436] font-bold px-2">Luz Mery Perez</p>
+              </div> 
+                <div class="flex justify-center -mt-6">
+                  <div class="bg-white border-4 border-gray-300 rounded-full h-16 w-16">
+                    <img src="/img/avatar/5.png" class="rounded-full" alt="Avatar"> 
+                  </div>
+                </div>
+                <p class="text-sm text-gray-500 mt-2">Próxima actividad: Ensayo literario</p>
+                <button class="bg-[#94C77E] text-white py-1 px-4 rounded hover:bg-[#b2e59c] mt-4 text-sm">
+                  Empezar
+                </button>
+              </div>
+
+              <div class="bg-white h-64 w-64 rounded-xl shadow-lg p-4 text-left hover:scale-105 hover:border-[#94C77E] border-4 transition-all duration-300">
+                <div class="bg-[url('/img/materias/6.png')] bg-cover bg-top h-24 rounded-t-lg">
+                  <p class="text-white text-4xl font-bold px-2">Ética</p>
+                  <p class="text-[#A16436] font-bold px-2">Luz Mery Perez</p>
+              </div> 
+                <div class="flex justify-center -mt-6">
+                  <div class="bg-white border-4 border-gray-300 rounded-full h-16 w-16">
+                    <img src="/img/avatar/6.png" class="rounded-full" alt="Avatar"> 
+                  </div>
+                </div>
+                <p class="text-sm text-gray-500 mt-2">Próxima actividad: Ensayo literario</p>
+                <button class="bg-[#94C77E] text-white py-1 px-4 rounded hover:bg-[#b2e59c] mt-4 text-sm">
+                  Empezar
+                </button>
+              </div>
+
+              <div class="bg-white h-64 w-64 rounded-xl shadow-lg p-4 text-left hover:scale-105 hover:border-[#94C77E] border-4 transition-all duration-300">
+                <div class="bg-[url('/img/materias/7.png')] bg-cover bg-top h-24 rounded-t-lg">
+                  <p class="text-white text-4xl font-bold px-2">Inglés</p>
+                  <p class="text-[#A16436] font-bold px-2">Luz Mery Perez</p>
+              </div> 
+                <div class="flex justify-center -mt-6">
+                  <div class="bg-white border-4 border-gray-300 rounded-full h-16 w-16">
+                    <img src="/img/avatar/7.png" class="rounded-full" alt="Avatar"> 
+                  </div>
+                </div>
+                <p class="text-sm text-gray-500 mt-2">Próxima actividad: Ensayo literario</p>
+                <button class="bg-[#94C77E] text-white py-1 px-4 rounded hover:bg-[#b2e59c] mt-4 text-sm">
+                  Empezar
+                </button>
+              </div>
+
+              <div class="bg-white h-64 w-64 rounded-xl shadow-lg p-4 text-left hover:scale-105 hover:border-[#94C77E] border-4 transition-all duration-300">
+                <div class="bg-[url('/img/materias/8.png')] bg-cover bg-top h-24 rounded-t-lg">
+                  <p class="text-white text-4xl font-bold px-2">Informática</p>
+                  <p class="text-[#A16436] font-bold px-2">Luz Mery Perez</p>
+              </div> 
+                <div class="flex justify-center -mt-6">
+                  <div class="bg-white border-4 border-gray-300 rounded-full h-16 w-16">
+                    <img src="/img/avatar/8.png" class="rounded-full" alt="Avatar"> 
+                  </div>
+                </div>
+                <p class="text-sm text-gray-500 mt-2">Próxima actividad: Ensayo literario</p>
+                <button class="bg-[#94C77E] text-white py-1 px-4 rounded hover:bg-[#b2e59c] mt-4 text-sm">
+                  Empezar
+                </button>
+              </div>
+		  
+
+		  </div>
+		  
+	</body>
+</html>

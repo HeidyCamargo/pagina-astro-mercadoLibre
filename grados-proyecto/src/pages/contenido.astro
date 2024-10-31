@@ -1,0 +1,61 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+    <body class="bg-[#efe8c1]">
+        <div class="bg-[#94C77E] rounded-t-xl mx-auto my-8 h-40 w-3/5 hover:scale-100 flex items-center justify-center">
+            <p class="text-center text-white font-black text-5xl">Español</p>
+        </div>
+        
+        
+        <div class="grid grid-cols-3 gap-2 text-white text-xl font-bold w-full max-w-6xl mx-auto space-x-8">
+          <div class="bg-[#94c77e] py-4 text-center rounded-lg">Curso</div>
+          <div class="bg-[#94c77e] py-4 text-center rounded-lg">Participantes</div>
+          <div class="bg-[#94c77e] py-4 text-center rounded-lg">Calificaciones</div>
+        </div>
+    
+        <div class="flex justify-between max-w-6xl mx-auto py-6 space-x-4">
+          
+          <div class="flex-1 space-y-4">
+            <div class="bg-white shadow-md rounded-lg p-6">
+              <h2 class="text-xl font-bold mb-2">Comprensión lectora</h2>
+              <p class="text-gray-700 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem deserunt pariatur ad!</p>
+              <button class="bg-[#94c77e] text-white px-4 py-2 rounded">Ver contenido</button>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-6">
+              <h2 class="text-xl font-bold mb-2">Tipos de texto</h2>
+              <p class="text-gray-700 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem deserunt pariatur ad!</p>
+              <button class="bg-[#94c77e] text-white px-4 py-2 rounded">Ver contenido</button>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-6">
+              <h2 class="text-xl font-bold mb-2">Ortografía</h2>
+              <p class="text-gray-700 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem deserunt pariatur ad!</p>
+              <button class="bg-[#94c77e] text-white px-4 py-2 rounded">Ver contenido</button>
+            </div>
+          </div>
+    
+        
+          <div class="w-64 bg-[#d7e9c9] rounded-lg p-4">
+            <h3 class="text-lg font-bold mb-4">Recursos adicionales</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-[#4F774D] hover:underline">Diccionarios en línea</a></li>
+              <li><a href="#" class="text-[#4F774D] hover:underline">Bibliotecas digitales</a></li>
+              <li><a href="#" class="text-[#4F774D] hover:underline">Guías de estudio</a></li>
+            </ul>
+          </div>
+        </div>
+      </body>

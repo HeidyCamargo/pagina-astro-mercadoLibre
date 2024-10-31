@@ -1,0 +1,193 @@
+---
+interface Props { 
+    title: string; 
+} 
+
+const { title } = Astro.props; 
+---
+
+<!doctype html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8" /> 
+        <meta name="description" content="Astro description" /> 
+        <meta name="viewport" content="width=device-width" /> 
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> 
+        <meta name="generator" content={Astro.generator} /> 
+        <title>{title}</title> 
+    </head> 
+    <body class="bg-[#efe8c1]"> 
+
+        <p class="py-8 font-black text-center text-[#A16436] text-5xl">Elije tu curso para comenzar </p>      
+    <div class="grid justify-items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 py-8 px-8 font-extrabold text-center text-[#A16436] text-4xl"> 
+
+		<!-- Primer grado -->
+		<div class="bg-white h-64 w-64 justify-center flex bg-center rounded-2xl py-5 border-4 transform transition duration-300 hover:scale-105 hover:border-4 hover:border-[#94C77E]">
+			<div class="bg-[url('/img/grados/1.png')] bg-[length:100%_100%] h-52 w-52 bg-center rounded-2xl">Primer grado 
+				<div class="flex px-2 space-x-2 justify-center">
+					<a href="/inicio"> 
+						<button class="bg-[#94C77E] text-white py-2 px-4 rounded hover:bg-[#b2e59c] mt-6 text-sm">Empezar</button> 
+					</a> 
+					<a href="/registro">
+					<button class="bg-[#94C77E] text-white py-2 px-2 rounded hover:bg-[#b2e59c] mt-6 text-sm">Registrarse</button> 
+					</div>
+					</a>
+			</div> 
+		</div>
+
+		<!-- Segundo grado -->
+		<div class="bg-white h-64 w-64 justify-center flex bg-center rounded-2xl py-5 border-4 transform transition duration-300 hover:scale-105 hover:border-4 hover:border-[#94C77E]">
+			<div class="bg-[url('/img/grados/2.png')] bg-[length:100%_100%] h-52 w-52 bg-center rounded-2xl">Segundo grado 
+				<div class="flex px-2 space-x-2 justify-center">
+					<a href="/inicio"> 
+						<button class="bg-[#94C77E] text-white py-2 px-4 rounded hover:bg-[#b2e59c] mt-6 text-sm">Empezar</button> 
+					</a> 
+					<a href="/registro">
+					<button class="bg-[#94C77E] text-white py-2 px-2 rounded hover:bg-[#b2e59c] mt-6 text-sm">Registrarse</button> 
+					</div>
+					</a>
+			</div> 
+		</div>
+
+		<!-- Tercer grado -->
+		<div class="bg-white h-64 w-64 justify-center flex bg-center rounded-2xl py-5 border-4 transform transition duration-300 hover:scale-105 hover:border-4 hover:border-[#94C77E]">
+			<div class="bg-[url('/img/grados/3.png')] bg-[length:100%_100%] h-52 w-52 bg-center rounded-2xl">Tercer grado 
+				<div class="flex px-2 space-x-2 justify-center">
+					<a href="/inicio"> 
+						<button class="bg-[#94C77E] text-white py-2 px-4 rounded hover:bg-[#b2e59c] mt-6 text-sm">Empezar</button> 
+					</a> 
+					<a href="/registro">
+					<button class="bg-[#94C77E] text-white py-2 px-2 rounded hover:bg-[#b2e59c] mt-6 text-sm">Registrarse</button> 
+					</div>
+					</a>
+			</div> 
+		</div>
+
+		<!-- Cuarto grado -->
+		<div class="bg-white h-64 w-64 justify-center flex bg-center rounded-2xl py-5 border-4 transform transition duration-300 hover:scale-105 hover:border-4 hover:border-[#94C77E]">
+			<div class="bg-[url('/img/grados/4.png')] bg-[length:100%_100%] h-52 w-52 bg-center rounded-2xl">Cuarto grado 
+				<div class="flex px-2 space-x-2 justify-center">
+					<a href="/inicio"> 
+						<button class="bg-[#94C77E] text-white py-2 px-4 rounded hover:bg-[#b2e59c] mt-6 text-sm">Empezar</button> 
+					</a> 
+					<a href="/registro">
+					<button class="bg-[#94C77E] text-white py-2 px-2 rounded hover:bg-[#b2e59c] mt-6 text-sm">Registrarse</button> 
+					</div>
+					</a>
+			</div> 
+		</div>
+
+		<!-- Quinto grado -->
+		<div class="bg-white h-64 w-64 justify-center flex bg-center rounded-2xl py-5 border-4 transform transition duration-300 hover:scale-105 hover:border-4 hover:border-[#94C77E]">
+			<div class="bg-[url('/img/grados/8.png')] bg-[length:100%_100%] h-52 w-52 bg-center rounded-2xl">Quinto grado 
+				<div class="flex px-2 space-x-2 justify-center">
+					<a href="/inicio"> 
+						<button class="bg-[#94C77E] text-white py-2 px-4 rounded hover:bg-[#b2e59c] mt-6 text-sm">Empezar</button> 
+					</a> 
+					<a href="/registro">
+					<button class="bg-[#94C77E] text-white py-2 px-2 rounded hover:bg-[#b2e59c] mt-6 text-sm">Registrarse</button> 
+					</div>
+					</a>
+			</div> 
+		</div>
+
+		<!-- Sexto grado -->
+		<div class="bg-white h-64 w-64 justify-center flex bg-center rounded-2xl py-5 border-4 transform transition duration-300 hover:scale-105 hover:border-4 hover:border-[#94C77E]">
+			<div class="bg-[url('/img/grados/7.png')] bg-[length:100%_100%] h-52 w-52 bg-center rounded-2xl">Sexto grado 
+				<div class="flex px-2 space-x-2 justify-center">
+					<a href="/inicio"> 
+						<button class="bg-[#94C77E] text-white py-2 px-4 rounded hover:bg-[#b2e59c] mt-6 text-sm">Empezar</button> 
+					</a> 
+					<a href="/registro">
+					<button class="bg-[#94C77E] text-white py-2 px-2 rounded hover:bg-[#b2e59c] mt-6 text-sm">Registrarse</button> 
+					</div>
+					</a>
+			</div> 
+		</div>
+
+		<!-- Séptimo grado -->
+		<div class="bg-white h-64 w-64 justify-center flex bg-center rounded-2xl py-5 border-4 transform transition duration-300 hover:scale-105 hover:border-4 hover:border-[#94C77E]">
+			<div class="bg-[url('/img/grados/6.png')] bg-[length:100%_100%] h-52 w-52 bg-center rounded-2xl">Séptimo grado 
+				<div class="flex px-2 space-x-2 justify-center">
+					<a href="/inicio"> 
+						<button class="bg-[#94C77E] text-white py-2 px-4 rounded hover:bg-[#b2e59c] mt-6 text-sm">Empezar</button> 
+					</a> 
+					<a href="/registro">
+					<button class="bg-[#94C77E] text-white py-2 px-2 rounded hover:bg-[#b2e59c] mt-6 text-sm">Registrarse</button> 
+					</div>
+					</a>
+			</div> 
+		</div>
+
+		<!-- Octavo grado -->
+		<div class="bg-white h-64 w-64 justify-center flex bg-center rounded-2xl py-5 border-4 transform transition duration-300 hover:scale-105 hover:border-4 hover:border-[#94C77E]">
+			<div class="bg-[url('/img/grados/5.png')] bg-[length:100%_100%] h-52 w-52 bg-center rounded-2xl">Octavo grado 
+				<div class="flex px-2 space-x-2 justify-center">
+					<a href="/inicio"> 
+						<button class="bg-[#94C77E] text-white py-2 px-4 rounded hover:bg-[#b2e59c] mt-6 text-sm">Empezar</button> 
+					</a> 
+					<a href="/registro">
+					<button class="bg-[#94C77E] text-white py-2 px-2 rounded hover:bg-[#b2e59c] mt-6 text-sm">Registrarse</button> 
+					</div>
+					</a>
+			</div> 
+		</div>
+
+		<!-- Noveno grado -->
+		<div class="bg-white h-64 w-64 justify-center flex bg-center rounded-2xl py-5 border-4 transform transition duration-300 hover:scale-105 hover:border-4 hover:border-[#94C77E]">
+			<div class="bg-[url('/img/grados/9.png')] bg-[length:100%_100%] h-52 w-52 bg-center rounded-2xl">Noveno grado 
+				<div class="flex px-2 space-x-2 justify-center">
+					<a href="/inicio"> 
+						<button class="bg-[#94C77E] text-white py-2 px-4 rounded hover:bg-[#b2e59c] mt-6 text-sm">Empezar</button> 
+					</a> 
+					<a href="/registro">
+					<button class="bg-[#94C77E] text-white py-2 px-2 rounded hover:bg-[#b2e59c] mt-6 text-sm">Registrarse</button> 
+					</div>
+					</a>
+			</div> 
+		</div>
+
+		<!-- Décimo grado -->
+		<div class="bg-white h-64 w-64 justify-center flex bg-center rounded-2xl py-5 border-4 transform transition duration-300 hover:scale-105 hover:border-4 hover:border-[#94C77E]">
+			<div class="bg-[url('/img/grados/10.png')] bg-[length:100%_100%] h-52 w-52 bg-center rounded-2xl">Décimo grado 
+				<div class="flex px-2 space-x-2 justify-center">
+					<a href="/inicio"> 
+						<button class="bg-[#94C77E] text-white py-2 px-4 rounded hover:bg-[#b2e59c] mt-6 text-sm">Empezar</button> 
+					</a> 
+					<a href="/registro">
+					<button class="bg-[#94C77E] text-white py-2 px-2 rounded hover:bg-[#b2e59c] mt-6 text-sm">Registrarse</button> 
+					</div>
+					</a>
+			</div> 
+		</div>
+
+		<!-- Once grado -->
+		<div class="bg-white h-64 w-64 justify-center flex bg-center rounded-2xl py-5 border-4 transform transition duration-300 hover:scale-105 hover:border-4 hover:border-[#94C77E]">
+			<div class="bg-[url('/img/grados/11.png')] bg-[length:100%_100%] h-52 w-52 bg-center rounded-2xl">Once <br> grado 
+				<div class="flex px-2 space-x-2 justify-center">
+					<a href="/inicio"> 
+						<button class="bg-[#94C77E] text-white py-2 px-4 rounded hover:bg-[#b2e59c] mt-6 text-sm">Empezar</button> 
+					</a> 
+					<a href="/registro">
+					<button class="bg-[#94C77E] text-white py-2 px-2 rounded hover:bg-[#b2e59c] mt-6 text-sm">Registrarse</button> 
+					</div>
+					</a>
+			</div> 
+		</div>
+
+		<!-- Otros -->
+		<div class="bg-white h-64 w-64 justify-center flex bg-center rounded-2xl py-5 border-4 transform transition duration-300 hover:scale-105 hover:border-4 hover:border-[#94C77E]">
+			<div class="bg-[url('/img/grados/12.png')] bg-[length:100%_100%] h-52 w-52 bg-center rounded-2xl"><br> Otros 
+				<div class="flex px-2 space-x-2 justify-center">
+					<a href="/inicio"> 
+						<button class="bg-[#94C77E] text-white py-2 px-4 rounded hover:bg-[#b2e59c] mt-6 text-sm">Empezar</button> 
+					</a> 
+					<a href="/registro">
+					<button class="bg-[#94C77E] text-white py-2 px-2 rounded hover:bg-[#b2e59c] mt-6 text-sm">Registrarse</button> 
+					</div>
+					</a>
+			</div> 
+		</div>
+    </div> 
+    </body> 
+</html>

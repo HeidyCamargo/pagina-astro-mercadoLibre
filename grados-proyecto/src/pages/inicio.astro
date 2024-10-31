@@ -1,0 +1,38 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Ingreso al Curso" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpeg+xml" href="/Logo.jpeg" />
+    <title>Ingreso al Curso</title>
+</head>
+
+<body class="bg-[#EFE8C1] flex items-center justify-center min-h-screen">
+    <div class="min-h-screen bg-[#EFE8C1] flex items-center justify-center">
+        <div class="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full">
+          <form>
+            <h1 class="text-2xl font-bold mb-4 text-[#4F774D]">Ingreso al Curso</h1>
+            
+            <!-- Clave de acceso -->
+            <label for="clave" class="block text-[#4F774D] font-semibold">Clave de acceso:</label>
+            <input type="password" id="clave" name="clave" required 
+                   class="w-full p-2 mt-1 mb-4 border border-[#A16436] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#94C77E]">
+            
+            <!-- Botón de ingresar que redirige a primer-grado -->
+            <a href="/primer-grado" class="w-full bg-[#4F774D] text-white py-2 px-4 rounded-lg hover:bg-[#3B5D3A] text-center block">
+              Ingresar
+            </a>
+          </form>
+        </div>
+      </div>
+
+</body>
+</html>
